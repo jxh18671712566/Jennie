@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>猫窝</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./dist/css/swiper.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="./css/public-header.css">
+    <link rel="stylesheet" type="text/css" href="./css/public-footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/back-to-top.css">
+
+	<script type="text/javascript" src="./dist/js/back-to-top.js"></script>
+
+	<style type="text/css">
+
+		@font-face {
+			font-family: '迷你简特细等线';
+			src: url('./fonts/迷你简特细等线.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'SIMHEI';
+			src: url('./fonts/SIMHEI.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'STXIHEI';
+			src: url('./fonts/STXIHEI.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+
+
+		.w3layouts-banner-slider {
+			background-image: url(./images/background-photo.png);
+	    	background-repeat: no-repeat;
+	    	background-position: center;
+	    	background-size: 100%;
+	    	position: relative;
+	    	z-index: 1;
+	    	font-family: "迷你简特细等线";
+		}
+		.swiper-container {
+	        width: 100%;
+	        height: 100%;
+	        margin-left: auto;
+	        margin-right: auto;
+	    }
+	    .button {
+	    	float: left;
+	    	position: relative;
+	    	left: 50%;
+	    }
+	    .button a {
+	    	float: left;
+	    	position: relative;
+	    	right: 50%;
+	    	display: block;
+	    	width: 90px;
+	    	height: 35px;
+	    	margin: -140px auto;
+	    	border: 2px solid #fff;
+	    	border-radius: 3px;
+	    	color: #fff;
+	    	background-color: #ff6633;
+	    	float: top;
+	    	text-decoration: none;
+	    	z-index: 1;
+	    	line-height: 35px;
+	    	text-align: center;
+	    	font-weight: bold;
+	    	font-size: 18px;
+	    	transition: 0.3s;
+	    	font-family: "迷你简特细等线";
+	    }
+	    .w3layouts-banner-slider a:hover{
+			background: none;
+			border: solid 1px #fff;
+			font-size: 19px;
+			width: 92px;
+			height: 37px;
+		}
+	    .swiper-wrapper {
+	    	height: 420px;
+	    	padding-bottom: 100px;
+	    	text-align: center;
+	        font-size: 30px;
+	    }
+	    .swiper-slide {
+	        text-align: center;
+	        /* Center slide text vertically */
+	        display: -webkit-box;
+	        display: -ms-flexbox;
+	        display: -webkit-flex;
+	        display: flex;
+	        -webkit-box-pack: center;
+	        -ms-flex-pack: center;
+	        -webkit-justify-content: center;
+	        justify-content: center;
+	        -webkit-box-align: center;
+	        -ms-flex-align: center;
+	        -webkit-align-items: center;
+	        align-items: center;
+    	}
+	    .swiper-slide h1 {
+	    	font-size: 60px;
+	    	color: #fff;
+	    	line-height: 100px;
+	    	opacity: 0.7;
+	    	font-family: "迷你简特细等线";
+	    }
+		.swiper-pagination span {
+			width: 10px;
+			height: 10px;
+			background-color: #fff;
+			border: 2px solid #ff6633;
+			font-family: "迷你简特细等线";
+		}
+		.swiper-button-next {
+			width: 50px;
+			height: 50px;
+			background-image: url(./images/arrows-right.png);
+			background-size: 100%;
+			right: 2%;
+		}
+		.swiper-button-prev {
+			width: 50px;
+			height: 50px;
+			background-image: url(./images/arrows-left.png);
+			background-size: 100%;
+			left: 2%;
+		}
+
+
+		.welcome {
+			margin: 0 auto;
+			width: 960px;
+			height: 460px;
+		}
+		.welcome .container {
+			margin: 10px auto;
+			width: 960px;
+			height: 460px;
+		}
+		.welcome .container .welcome-header {
+			width: 960px;
+			height: 120px;
+			margin: 0 auto;
+		}
+		.welcome .container .welcome-header h2 {
+			font-size: 60px;
+	    	color: #333;
+	    	line-height: 120px;
+	    	float: left;
+		}
+		.welcome .container .welcome-header h3 {
+			font-size: 40px;
+	    	color: #424242;
+	    	line-height: 40px;
+	    	float: left;
+	    	margin-top: 50px;
+	    	margin-left: 30px;
+	    	font-family: "迷你简特细等线";
+		}
+		.welcome-body {
+			margin: 0 auto;
+			width: 960px;
+			height: 420px;
+		}
+		.welcome-body-left {
+			margin-top: 20px;
+			width: 960px;
+			height: 280px;
+		}
+		.welcome-body .pic01 {
+			float: left;
+			width: 240px;
+			height: 240px;
+			background-image: url(./images/welcome01.png);
+			background-position: 50% 50%;
+			background-size: 100%;
+			border-radius: 5px;
+		}
+		.welcome-body .pic02 {
+			float: left;
+			width: 240px;
+			height: 240px;
+			margin-left: 20px;
+			background-image: url(./images/welcome02.png);
+			background-position: 50% 50%;
+			background-size: 100%;
+			border-radius: 5px;
+		}
+		.welcome-body a {
+			display: block;
+			width: 240px;
+			height: 100px;
+			font-size: 30px;
+			padding-top: 140px;
+			text-align: center;
+			color: #424242;
+			font-weight: bold;
+			transition: 0.2s;
+			text-decoration: none;
+		}
+		.welcome-body a:hover{
+			color: #ff6633;
+			font-size: 32px;
+		}
+		.welcome-body .text {
+			float: left;
+			margin-left: 30px;
+			margin-top: 20px;
+			width: 430px;
+			height: 220px;
+			font-family: "STXIHEI";
+		}
+		.welcome-body .text h4 {
+			font-size: 22px;
+			color: #333;
+		}
+		.welcome-body .text p {
+			font-size: 20px;
+			color: #424242;
+			margin-top: 20px;
+			font-size: 16px;
+		}
+		.welcome-body .text span {
+			display: block;
+			font-size: 20px;
+			color: #424242;
+			margin-top: 20px;
+			font-size: 16px;
+		}
+
+
+
+		.services {
+			width: 100%;
+			height: 480px;
+			background-color: #e5ab6d;
+		}
+		.services-header {
+			margin: 0 auto;
+			padding-top: 20px;
+			width: 960px;
+			height: 100px;
+		}
+		.services-header h2 {
+			font-size: 60px;
+	    	color: #333;
+	    	line-height: 100px;
+	    	float: left;
+	    	font-weight: bold;
+	    }
+	    .services-body {
+	    	width: 960px;
+	    	margin: 0 auto;
+	    }
+		.services-body-left {
+			float: left;
+			width: 440px;
+		}
+		.services-body-right {
+			float: left;
+			width: 440px;
+			margin-left: 40px;
+		}
+		.services01 {
+			width: 440px;
+			height: 70px;
+			margin: 30px 0;
+		}
+		.services01 .s-photo {
+			width: 68px;
+			height: 68px;
+			border: 1px solid #fff;
+			float: left;
+		}
+		.services01 .s-photo img {
+			width: 60px;
+			height: 60px;
+			padding: 4px;
+		}
+		.services01 .text {
+			float: left;
+			margin-left: 25px;
+			width: 300px;
+			height: 70px;
+		}
+		.services01 .text a.title {
+			display: block;
+			font-size: 22px;
+			color: #333;
+			text-decoration: none;
+			transition: 0.2s;
+		}
+		.services01 .text a.title:hover {
+			color: #ff6633;
+		}
+		.services01 .text a.content {
+			display: block;
+			font-size: 18px;
+			color: #fff;
+			text-decoration: none;
+		}
+
+
+
+
+		.news .container {
+			margin: 20px auto;
+			width: 960px;
+			height: 600px;
+		}
+		.news-header {
+			width: 960px;
+			height: 120px;
+		}
+		.news-header h2 {
+			font-size: 60px;
+	    	color: #333;
+	    	line-height: 120px;
+	    	float: left;
+	    	font-weight: bold;
+	    }
+		.news-body-left {
+			margin-top: 20px;
+			float: left;
+		}
+		.news-body .icons {
+			width: 100px;
+			height: 440px;
+		}
+		.news-body .icons img {
+			width: 30px;
+			height: 30px;
+			margin-left: 60px;
+			margin-bottom: 20px;
+
+		}
+		.news-body .photo-text {
+			width: 360px;
+			height: 440px;
+			margin-left: 20px;
+		}
+		.news-body .photo-text .news-photo {
+			width: 360px;
+			height: 240px;
+			background-color: #f3f3f3;
+		}
+		.news-body .photo-text .news-photo img {
+			border-radius: 5px;
+		}
+		.news-body .photo-text .news-photo a {
+			display: block;
+			width: 360px;
+			height: 240px;
+		}
+		.news-body .photo-text .news-text {
+			width: 360px;
+			height: 180px;
+			margin-top: 20px;
+		}
+		.news-body .photo-text .news-text a.title {
+			display: block;
+			font-size: 20px;
+			line-height: 30px;
+			text-decoration: none;
+			color: #333;
+			transition: 0.2s;
+		}
+		.news-body .photo-text .news-text a.title:hover {
+			color: #ff6633;
+		}
+		.news-body .photo-text .news-text p.content {
+			display: block;
+			font-size: 15px;
+			line-height: 20px;
+			margin-top: 10px;
+			text-decoration: none;
+			color: #9d9d9d;
+		}
+		.news-body .text {
+			width: 460px;
+			height: 440px;
+			margin-left: 20px;
+		}
+		.news-body .text .news-text-02 a.title {
+			display: block;
+			font-size: 20px;
+			line-height: 25px;
+			text-decoration: none;
+			color: #333;
+			transition: 0.2s;
+		}
+		.news-body .text .news-text-02 a.title:hover{
+			color: #ff6633;
+		}
+		.news-body .text .news-text-02 p.date {
+			display: block;
+			font-size: 18px;
+			line-height: 20px;
+			text-decoration: none;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			color: #ff6633;
+			opacity: 0.8;
+		}
+		.news-body .text .news-text-02 p.content {
+			display: block;
+			font-size: 15px;
+			line-height: 20px;
+			margin-top: 10px;
+			margin-bottom: 30px;
+			text-decoration: none;
+			color: #9d9d9d;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<!--header-->
+	<div class="banner">
+		<div class="public-header">
+			<div class="container">
+				<div class="header-left">
+					<a href=""><img src="./images/CAT.png"></a>
+				</div>
+				<div class="header-center">
+					<ul class="navList">
+						<li><a class="selected" href="Home.html">主页</a></li>
+						<li><a href="Encyclopedia.html">百科</a></li>
+						<li><a href="lumao.html">猫片</a>
+	                        <ul class="dropdown-menu">
+	                            <li><a class="3chose1" href="Video.html">猫咪视频</a></li>
+	                            <li><a class="3chose1" href="webcast.html">猫咪直播</a></li>
+	                            <li><a class="3chose1" href="Pictures.html">猫咪摄影</a></li>
+	                        </ul>
+	                    </li>
+						<li><a href="fosterage.html">寄养</a></li>
+						<li><a href="adopt.html">领养</a></li>
+						<li><a href="contact-us.html">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="header-right">
+					<div>
+						<ul>
+							<li><a href=""><img src="./images/sina.png" class="sina"></img></a></li>
+							<li><a href=""><img src="./images/weichat.png" class="weichat"></img></a></li>
+							<li><a href=""><img src="./images/tele.png" class="tele"></img></a></li>
+						</ul>
+					</div>	
+					<div class="clearFix"></div>
+				</div>
+				<div class="clearFix"></div>
+			</div>
+		</div>
+		<div class="w3layouts-banner-slider">
+			<div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide slide1"><h1>关爱 呵护 </br>关注猫的一切</h1></div>
+		            <div class="swiper-slide slide2"><h1>可爱的猫咪</h1></div>
+		            <div class="swiper-slide slide2"><h1>喜欢猫？来这里吧！</h1></div>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		        <!-- Add Arrows -->
+		        <div class="swiper-button-next"></div>
+		        <div class="swiper-button-prev"></div>
+		    </div>
+		    
+		    <!-- Swiper JS -->
+		    <script src="./dist/js/swiper.min.js"></script>
+
+		    <!-- Initialize Swiper -->
+		    <script>
+		    var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        slidesPerView: 1,
+		        autoplayDisableOnInteraction: false,
+		        spaceBetween: 30,
+		        loop: true,
+		        autoplay: 3000,
+		    });
+		    </script>
+			<div class="button"><a href="lumao.html">点击进入</a></div>
+		</div>
+	</div>
+
+	<div class="welcome">
+		<div class="container">
+			<div class="welcome-header">
+				<h2>欢迎</h2>
+				<h3>很高兴你找到了我们的猫窝</h3>
+				<div class="clearFix"></div>
+			</div>
+			<div class="welcome-body">
+				<div onclick="" class="welcome-body-left pic01"><a href="Video.html">视频</a></div>
+				<div onclick="" class="welcome-body-left pic02"><a href="Pictures.html">图片</a></div>
+				<div class="welcome-body-left text">
+					<h4>喝酸奶，服用谷登猫用六种菌来调理肠胃 </h4>
+					<p>在猫主的观念中，猫咪用益生菌比较多，比如：猫咪食欲不振、排便不好，甚至是有事没事都会来上一包来保健。对此，专家表示，益生菌虽好，但滥用可能导致益生菌依赖症。<span>盲目滥用益生菌甚至可能对健康带来负面影响，科学研究表明，益生菌虽然是有益的，却不是万能的，适当的保健喂食是好的，但是不能过量。  </span></p>
+				</div>
+				<div class="clearFix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="services">
+		<div class="container">
+			<div class="services-header">
+				<h2>服务</h2>
+			</div>
+			<div class="services-body">
+				<div class="services-body-left">
+					<div class="services01">
+						<div class="s-photo"><img src="./images/better-love.png"></div>
+						<div class="text">
+							<a href="" class="title">给猫更好的关爱</a>
+							<a href="" class="content">通过领养、寄养，让猫咪能够在更好的环境中的生活。</a>
+						</div>
+						<div class="clearFix"></div>
+					</div>
+					<div class="services01">
+						<div class="s-photo"><img src="./images/more-efficiency.png"></div>
+						<div class="text">
+							<a href="" class="title">更快的效率</a>
+							<a href="" class="content">后台将以最快的速度审核领养、寄养信息，快速为猫咪找到家。</a>
+						</div>
+						<div class="clearFix"></div>
+					</div>
+					<div class="services01">
+						<div class="s-photo"><img src="./images/to-be-pair.png"></div>
+						<div class="text">
+							<a href="" class="title">快速结对</a>
+							<a href="" class="content">爱猫咪的各位亲可在短时间内快速、安全的结成爱猫咪的小分队。</a>
+						</div>
+						<div class="clearFix"></div>
+					</div>
+				</div>
+				<div class="services-body-right">
+					<div class="services01">
+						<div class="s-photo"><img src="./images/timely-update.png"></div>
+						<div class="text">
+							<a href="" class="title">及时更新</a>
+							<a href="" class="content">及时的更新，确保信息的及时性和准确性，为猫咪提供更好的环境。</a>
+						</div>
+						<div class="clearFix"></div>
+					</div>
+					<div class="services01">
+						<div class="s-photo"><img src="./images/better-service.png"></div>
+						<div class="text">
+							<a href="" class="title">更好的服务</a>
+							<a href="" class="content">我们将以我们最好的状态，提供最优质的服务。</a>
+					</div>
+						<div class="clearFix"></div>
+					</div>
+					<div class="services01">
+						<div class="s-photo"><img src="./images/24-hours-service.png"></div>
+						<div class="text">
+							<a href="" class="title">24小时服务</a>
+							<a href="" class="content">24小时在线客服，随时可以与您沟通。</a>
+						</div>
+						<div class="clearFix"></div>
+					</div>
+				</div>
+				<div class="clearFix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="news">
+		<div class="container">
+			<div class="news-header">
+				<h2>新闻/公告</h2>
+			</div>
+			<div class="news-body">
+				<div class="news-body-left icons">
+					<img src="./images/like.png">
+					<img src="./images/date.png">
+				</div>
+				<div class="news-body-left photo-text">
+					<div class="news-photo">
+						<a href=""><img src="./images/news-photo.png"></a>
+					</div>
+					<div class="news-text">
+						<a href="" class="title">今天的新闻头条是：</br>震惊｜三只小猫竟然。。。</a>
+						<p href="" class="content">在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。</p>
+					</div>
+				</div>
+				<div class="news-body-left text">
+					<div class="news-text-02">
+						<a href="" class="title">今天的新闻头条是：震惊｜三只小猫竟然。。。</a>
+						<p class="date">2017年4月20日</p>
+						<p class="content">在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。</p>
+					</div>
+					<div class="news-text-02">
+						<a href="" class="title">今天的新闻头条是：震惊｜三只小猫竟然。。。</a>
+						<p class="date">2017年4月20日</p>
+						<p class="content">在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。</p>
+					</div>
+					<div class="news-text-02">
+						<a href="" class="title">今天的新闻头条是：震惊｜三只小猫竟然。。。</a>
+						<p class="date">2017年4月20日</p>
+						<p class="content">在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。在本周一早上8点，在王大爷家外，出现了3只小猫，之后竟然。</p>
+					</div>
+				</div>
+				<div class="clearFix"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="public-footer">
+			<div class="container01">
+				<div class="footer-left logo-icons">
+					<div class="CAT-logo"><a href=""></a></div>
+					<div class="contract">
+						<div class="contract-left">
+							<a href=""><img src="./images/sina-b.png" style="width: 100%; height: 100%;"></a>	
+						</div>
+						<div class="contract-left">
+							<a href=""><img src="./images/weichat-b.png" style="width: 100%; height: 100%;"></a>
+						</div>
+						<div class="contract-left">
+							<a href=""><img src="./images/tele-b.png" style="width: 100%; height: 100%;"></a>
+						</div>
+						<div class="clearFix"></div>
+					</div>
+				</div>
+				<div class="footer-left navList01">
+					<ul>
+						<li class="navList-top"><p>导航</p></li>
+						<li><a href="Home.html">主页</a></li>
+						<li><a href="Encyclopedia.html">百科</a></li>
+						<li><a href="adopt.html">领养</a></li>
+						<li><a href="fosterage.html">寄养</a></li>
+						<li><a href="lumao.html">猫片</a></li>
+					</ul>
+				</div>
+				<div class="footer-left navList02">
+					<ul>
+						<li><a href="Video.html">猫咪视频</a></li>
+						<li><a href="webcast.html">猫咪直播</a></li>
+						<li><a href="Pictures.html">猫咪摄影</a></li>
+						<li><a href="contact-us.html">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="clearFix"></div>
+			</div>
+			<div class="container02">
+				<div class="copyright"><p>Cat.猫窝 焦晓涵 农雯雯 陈卓</p></div>
+			</div>
+		</div>
+	</div>
+	
+	<a href="javascript:;" id="btn"></a>
+	
+</body>
+</html>
